@@ -268,7 +268,7 @@ function getData() {
         first_certification.value = saveUsers.first_certification
         second_certification.value = saveUsers.second_certification
         third_certification.value = saveUsers.third_certification
-        forth_certification.value = saveUsers.first_certification
+        forth_certification.value = saveUsers.forth_certification
     
 }
 
