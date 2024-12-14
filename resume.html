@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder App</title>
+    <link rel="stylesheet" href="resume.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div class="body">
+        <div class="container">
+            <div class="left_side">
+                <div class="profile_Text">
+                    <div class="image_Box" id="profileImg">
+                        <img src="" id="profilePic" alt="profile">
+                    </div>
+                    <h2 id="userName"></h2>
+                    <h5 id="userPost"></h5>
+
+                </div>
+
+                <div class="contact_Info">
+                    <h3 class="title">Contact Info</h3>
+                    <ul>
+
+                        <li id="fa-phone">
+                            <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                            <span class="text" id="userPhone"></span>
+                        </li>
+
+                        <li id="fa-map-marker">
+                            <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                            <span class="text" id="userAddress"></span>
+                        </li>
+
+                        <li id="fa-envelope">
+                            <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                            <span class="text" id="userEmail"></span>
+                        </li>
+                        <li id="fa-globe">
+                            <span class="icon"><i class="fa fa-globe" aria-hidden="true"></i></span>
+                            <span class="text" id="userPortfolio"></span>
+                        </li>
+                        <li id="fa-linkedin-in">
+                            <span class="icon"><i class="fa-brands fa-linkedin-in"></i></span>
+                            <span class="text" id="linkedinUser"></span>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="contact_Info education">
+                    <h3 class="title">Education</h3>
+                    <ul>
+                        <li id="University">
+                            <h5 id="firstYearstart"></h5>
+                            <h4 id="bechlordegree"></h4>
+                            <h4 id="Universityname"></h4>
+                        </li>
+
+                        <li id="college">
+                            <h5 id="secondYearstart"> - <span id="secondYearend"></span></h5>
+                            <h4 id="Interdegree"></h4>
+                            <h4 id="collegename"></h4>
+                        </li>
+
+                        <li id="school">
+                            <h5 id="thirdYearstart"> - <span id="thirdYearend"></span></h5>
+                            <h4 id="Matricdegree"></h4>
+                            <h4 id="schoolname"></h4>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="contact_Info language" id="Languages">
+                    <h3 class="title">Languages</h3>
+                    <ul>
+                        <li id="FirstLang">
+                            <span id="FirstLanguage"></span>
+                            <div class="percent">
+                                <div id="FirstLanguagePercent"></div>
+                            </div>
+                        </li>
+                        <li id="SecondLang">
+                            <span id="SecondLanguage"></span>
+                            <div class="percent">
+                                <div id="SecondLanguagePercent"></div>
+                            </div>
+                        </li>
+                        <li id="ThirdLang">
+                            <span id="ThirdLanguage"></span>
+                            <div class="percent">
+                                <div id="ThirdLanguagePercent"></div>
+                            </div>
+                        </li>
+                        <li id="ForthLang">
+                            <span id="ForthLanguage"></span>
+                            <div class="percent">
+                                <div id="ForthLanguagePercent"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="contact_Info interest">
+                    <h3 class="title" id="interests">Interest</h3>
+                    <ul>
+                        <li id="first_interest">
+                            <span class="icon"><i class="fa fa-star" aria-hidden="true"></i></span>
+                            <span class="text" id="first_hobby"></span>
+                        </li>
+
+                        <li id="second_interest">
+                            <span class="icon"><i class="fa fa-star" aria-hidden="true"></i></span>
+                            <span class="text" id="second_hobby"></span>
+                        </li>
+                        <li id="third_interest">
+                            <span class="icon"><i class="fa fa-star" aria-hidden="true"></i></span>
+                            <span class="text" id="third_hobby"></span>
+                        </li>
+                        <li id="forth_interest">
+                            <span class="icon"><i class="fa fa-star" aria-hidden="true"></i></span>
+                            <span class="text" id="forth_hobby"></span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="contact_Info certification">
+                    <h3 class="title" id="certifications">Certification</h3>
+                    <ul>
+                        <li id="first_certify">
+                            <span class="icon"><i class="fa fa-certificate" aria-hidden="true"></i></span>
+                            <span class="text" id="first_certification"></span>
+                        </li>
+
+                        <li id="second_certify">
+                            <span class="icon"><i class="fa fa-certificate" aria-hidden="true"></i></span>
+                            <span class="text" id="second_certification"></span>
+                        </li>
+                        <li id="third_certify">
+                            <span class="icon"><i class="fa fa-certificate" aria-hidden="true"></i></span>
+                            <span class="text" id="third_certification"></span>
+                        </li>
+
+                        <li id="forth_certify">
+                            <span class="icon"><i class="fa fa-certificate" aria-hidden="true"></i></span>
+                            <span class="text" id="forth_certification"></span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="right_side">
+                <div class="about">
+                    <h2 class="aboutTitle">Profile</h2>
+                    <p id="objectives"></p>
+                </div>
+
+
+                <div class="about">
+                    <h2 class="aboutTitle">Experience</h2>
+                    <div class="box box_line" id="first_job">
+                        <div class="job_year">
+                            <h5 id="jobExpDate1"></h5>
+                            <h5 id="company1"></h5>
+                        </div>
+                        <div class="text">
+                            <h4 id="jobPost1"></h4>
+                            <p id="jobDescription1"></p>
+                        </div>
+                    </div>
+
+                    <div class="box box_line" id="second_job">
+                        <div class="job_year">
+                            <h5 id="jobExpDate2"></h5>
+                            <h5 id="company2"></h5>
+                        </div>
+                        <div class="text">
+                            <h4 id="jobPost2"></h4>
+                            <p id="jobDescription2"></p>
+                        </div>
+                    </div>
+
+                    <div class="box box_line" id="third_job">
+                        <div class="job_year">
+                            <h5 id="jobExpDate3"></h5>
+                            <h5 id="company3"></h5>
+                        </div>
+                        <div class="text">
+                            <h4 id="jobPost3"></h4>
+                            <p id="jobDescription3"></p>
+                        </div>
+                    </div>
+
+                    <div class="box box_line" id="forth_job">
+                        <div class="job_year">
+                            <h5 id="jobExpDate4"></h5>
+                            <h5 id="company4"></h5>
+                        </div>
+                        <div class="text">
+                            <h4 id="jobPost4"></h4>
+                            <p id="jobDescription4">
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="box box_line" id="fifth_job">
+                        <div class="job_year">
+                            <h5 id="jobExpDate5"></h5>
+                            <h5 id="company5"></h5>
+                        </div>
+                        <div class="text">
+                            <h4 id="jobPost5"></h4>
+                            <p id="jobDescription5">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about skills">
+                    <h2 class="aboutTitle">My Skills</h2>
+
+                    <div class="box" id="Skill1">
+                        <h4 id="FirstSkill"></h4>
+                        <div class="percent">
+                            <div id="FirstSkillPercent"></div>
+                        </div>
+                    </div>
+
+                    <div class="box" id="Skill2">
+                        <h4 id="SecondSkill"></h4>
+                        <div class="percent">
+                            <div id="SecondSkillPercent"></div>
+                        </div>
+                    </div>
+
+                    <div class="box" id="Skill3">
+                        <h4 id="ThirdSkill"></h4>
+                        <div class="percent">
+                            <div id="ThirdSkillPercent"></div>
+                        </div>
+                    </div>
+
+                    <div class="box" id="Skill4">
+                        <h4 id="ForthSkill"></h4>
+                        <div class="percent">
+                            <div id="ForthSkillPercent"></div>
+                        </div>
+                    </div>
+
+                    <div class="box" id="Skill5">
+                        <h4 id="FifthSkill"></h4>
+                        <div class="percent">
+                            <div id="FifthSkillPercent"></div>
+                        </div>
+                    </div>
+
+                    <div class="box" id="Skill6">
+                        <h4 id="SixthSkill"></h4>
+                        <div class="percent">
+                            <div id="SixthSkillPercent"></div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="box" id="Skill7">
+                        <h4 id="SeventhSkill"></h4>
+                        <div class="percent">
+                            <div id="SeventhSkillPercent"></div>
+                        </div>
+                    </div>
+
+                    <div class="box" id="Skill8">
+                        <h4 id="EightSkill"></h4>
+                        <div class="percent">
+                            <div id="EightSkillPercent"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="editable" class="editable">
+        <button id="editResume">Edit Resume</button>
+    </div>
+</body>
+<script src="resume.js"></script>
+
+</html>

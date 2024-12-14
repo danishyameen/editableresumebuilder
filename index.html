@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="form_wrap">
+        <div class="form_contaier">
+            <form action="" id="multi-step-form">
+                <div id="form-contaier-box">
+                    <h1 class="form_title">Build Your Resume</h1>
+                    <ul class="prgoress_bar">
+                        <li id="step-1" class="active">Profile</li>
+                        <li id="step-2">Education</li>
+                        <li id="step-3">Experience</li>
+                        <li id="step-4">Skills</li>
+                    </ul>
+
+                         <!-- =============================== step_group 1 ========================== -->
+
+                    <div class="step_group" id="step-group-1">
+                        <div class="form_box">
+                            <div class="form_group">
+                                <label for="">First Name</label><br>
+                                <input type="text" id="firstName" class="form-field"  placeholder="First Name">
+                            </div>
+                            <div class="form_group">
+                                <label for="">Last Name</label><br>
+                                <input type="text" id="lastName" class="form-field" placeholder="last Name">
+                            </div>
+                        </div>
+
+                        <div class="form_box">
+                            <div class="form_group">
+                                <label for="">Profile Image</label><br>
+                                <input type="file" id="profileImage" class="form-field">
+                            </div>
+
+                            <div class="form_group">
+                                <label for="">Job Title</label><br>
+                                <input type="text" id="post" class="form-field" placeholder="Position">
+                            </div>
+                        </div>
+
+                        <div class="form_box">
+                            <div class="form_group">
+                                <label for="">Email</label><br>
+                                <input type="text" id="email" class="form-field"  placeholder="Email Address">
+                            </div>
+                            <div class="form_group">
+                                <label for="">Contact Number</label><br>
+                                <input type="number" id="phone" class="form-field"  placeholder="Phone Number">
+                            </div>
+                        </div>
+
+                        <div class="form_box">
+                            <div class="form_group">
+                                <label for="">Portfolio Link</label><br>
+                                <input type="text" id="profileUrl" class="form-field" placeholder="Website Link">
+                            </div>
+                            <div class="form_group">
+                                <label for="">Linkedin URL</label><br>
+                                <input type="text" id="linkedinUrl" class="form-field" placeholder="Profile Url">
+                            </div>
+                        </div>
+
+                        <div class="form_box">
+                            <div class="form_group">
+                                <label for="">Complete Address</label><br>
+                                <input type="text" id="address" class="form-field"  placeholder="Address">
+                            </div>
+                        </div>
+
+                        <div class="form_box">
+                            <div class="form_group">
+                                <label for="">Profile Objectives</label><br>
+                                <textarea name="" id="objectives"  class="form-field" cols="30" rows="10"
+                                    placeholder="Shorlty describe about your self"></textarea>
+                            </div>
+                        </div>
+
+
+
+                        <div class="form_box">
+                            <div class="btn-step">
+                                <button id="next-step-1">Next &#65515;</button>
+                            </div>
+                        </div>
+                    </div>
+
+                        <!-- =============================== step_group 2 =========================== -->
+
+                    <div class="step_group" id="step-group-2">
+                        <div class="form_box">
+                            <div class="form_group">
+                                <label for="">Start Year</label><br>
+                                <input type="text" id="firstYearStart" class="form-field" placeholder="Start Year">
+                            </div>
+
+                            <div class="form_group">
+                                <label for="">End Year</label><br>
+                                <input type="text" id="firstYearEnd" class="form-field" placeholder="End Year">
+                            </div>
+                        </div>
+
+                        <div class="form_box">
+                            <div class="form_group">
+                                <label for="">Institute Name</label><br>
+                                <input type="text" id="UniversityName" class="form-field" placeholder="University Name">
+                            </div>
+
+                            <div class="form_group">
+                                <label for="">Bechlor Degree</label><br>
+                                <input type="text" id="bechlorDegree" class="form-field" placeholder="Degree Name">
+                            </div>
+                        </div>
+
+                        <div class="form_box">
+                            <div class="form_group">
+                                <label for="">Start Year</label><br>
+                                <input type="text" id="secondYearStart" class="form-field" placeholder="Start Year">
+                            </div>
+
+                            <div class="form_group">
+                                <label for="">End Year</label><br>
+                                <input type="text" id="secondYearEnd" class="form-field" placeholder="End Year">
+                            </div>
+                        </div>
+
+                        <div class="form_box">
+                            <div class="form_group">
+                                <label for="">Institute Name</label><br>
+                                <input type="text" id="collegeName" class="form-field" placeholder="College / Board Name">
+                            </div>
+                            
+                            <div class="form_group">
+                                <label for="">Intermediate Degree</label><br>
+                                <input type="text" id="InterDegree" class="form-field" placeholder="Degree Name">
+                            </div>
+                        </div>
+
+                        <div class="form_box">
+                            <div class="form_group">
+                                <label for="">Start Year</label><br>
+                                <input type="text" id="thirdYearStart"  class="form-field" placeholder="Start Year">
+                            </div>
+
+                            <div class="form_group">
+                                <label for="">End Year</label><br>
+                                <input type="text" id="thirdYearEnd"  class="form-field" placeholder="End Year">
+                            </div>
+                        </div>
+
+                        <div class="form_box">
+                            <div class="form_group">
+                                <label for="">Institute Name</label><br>
+                                <input type="text" id="schoolName"  class="form-field" placeholder="School / Board Name">
+                            </div>
+
+                            <div class="form_group">
+                                <label for="">Matriculation Degree</label><br>
+                                <input type="text" id="MatricDegree"  class="form-field" placeholder="Degree Name">
+                            </div>
+                        </div>
+
+                        <div class="form_box">
+                            <div class="btn-step">
+                                <button id="next-prev-1">&#65513; Back</button>
+                                <button id="next-step-2">Next &#65515;</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                        <!-- =============================== step_group 3 =========================== -->
+
+                    <div class="step_group" id="step-group-3">
+                        <div class="form_box">
+                            <div class="form_group">
+                                <label for="">Start Year</label><br>
+                                <input type="text" id="StartYear1"  class="form-field" placeholder="Start Year">
+                            </div>
+
+                            <div class="form_group">
+                                <label for="">End Year</label><br>
+                                <input type="text" id="StartYear2"  class="form-field" placeholder="End Year">
+                            </div>
+                        </div>
+
+                        <div class="form_box">
+                            <div class="form_group">
+                                <label for="">Job Title</label><br>
+                                <input type="text" id="jobPost1"  class="form-field" placeholder="Job Position">
+                            </div>
+
+                            <div class="form_group">
+                                <label for="">Company Name</label><br>
+                                <input type="text" id="fisrtCompany"  class="form-field" placeholder="Company Name">
+                            </div>
+                        </div>
+
+                        <div class="form_box">
+                            <div class="form_group">
+                                <label for="">Job Description</label><br>
+                                <textarea name="" id="Description1"  class="form-field" cols="30" rows="40"
+                                    placeholder="Work Description"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form_box">
+                            <div class="form_group">
+                                <label for="">Start Year</label><br>
+                                <input type="text" id="StartYear3" class="form-field" placeholder="Start Year">
+                            </div>
+
+                            <div class="form_group">
+                                <label for="">End Year</label><br>
+                                <input type="text" id="StartYear4" class="form-field" placeholder="End Year">
+                            </div>
+                        </div>
+
+                        <div class="form_box">
+                            <div class="form_group">
+                                <label for="">Job Title</label><br>
+                                <input type="text" id="jobPost2" class="form-field" placeholder="Job Position">
+                            </div>
+
+                            <div class="form_group">
+                                <label for="">Company Name</label><br>
+                                <input type="text" id="secondCompany" class="form-field" placeholder="Company Name">
+                            </div>
+                        </div>
+
+                        <div class="form_box">
+                            <div class="form_group">
+                                <label for="">Job Description</label><br>
+                                <textarea name="" id="Description2" class="form-field" cols="30" rows="10"
+                                    placeholder="Work Description"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form_box">
+                            <div class="form_group">
+                                <label for="">Start Year</label><br>
+                                <input type="text" id="StartYear5" class="form-field" placeholder="Start Year">
+                            </div>
+
+                            <div class="form_group">
+                                <label for="">End Year</label><br>
+                                <input type="text" id="StartYear6" class="form-field" placeholder="End Year">
+                            </div>
+                        </div>
+
+                        <div class="form_box">
+                            <div class="form_group">
+                                <label for="">Job Title</label><br>
+                                <input type="text" id="jobPost3" class="form-field" placeholder="Job Position">
+                            </div>
+
+                            <div class="form_group">
+                                <label for="">Company Name</label><br>
+                                <input type="text" id="thirdCompany" class="form-field" placeholder="Company Name">
+                            </div>
+                        </div>
+
+                        <div class="form_box">
+                            <div class="form_group">
+                                <label for="">Job Description</label><br>
+                                <textarea name="" id="Description3" class="form-field" cols="30" rows="10"
+                                    placeholder="Work Description"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form_box">
+                            <div class="form_group">
+                                <label for="">Start Year</label><br>
+                                <input type="text" id="StartYear7" class="form-field" placeholder="Start Year">
+                            </div>
+
+                            <div class="form_group">
+                                <label for="">End Year</label><br>
+                                <input type="text" id="StartYear8" class="form-field" placeholder="End Year">
+                            </div>
+                        </div>
+
+                        <div class="form_box">
+                            <div class="form_group">
+                                <label for="">Job Title</label><br>
+                                <input type="text" id="jobPost4" class="form-field" placeholder="Job Position">
+                            </div>
+
+                            <div class="form_group">
+                                <label for="">Company Name</label><br>
+                                <input type="text" id="forthCompany" class="form-field" placeholder="Company Name">
+                            </div>
+                        </div>
+
+                        <div class="form_box">
+                            <div class="form_group">
+                                <label for="">Job Description</label><br>
+                                <textarea name="" id="Description4" class="form-field" cols="30" rows="10"
+                                    placeholder="Work Description"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form_box">
+                            <div class="form_group">
+                                <label for="">Start Year</label><br>
+                                <input type="text" id="StartYear9" class="form-field" placeholder="Start Year">
+                            </div>
+
+                            <div class="form_group">
+                                <label for="">End Year</label><br>
+                                <input type="text" id="StartYear0" class="form-field" placeholder="End Year">
+                            </div>
+                        </div>
+
+                        <div class="form_box">
+                            <div class="form_group">
+                                <label for="">Job Title</label><br>
+                                <input type="text" id="jobPost5" class="form-field" placeholder="Job Position">
+                            </div>
+
+                            <div class="form_group">
+                                <label for="">Company Name</label><br>
+                                <input type="text" id="fifthCompany" class="form-field" placeholder="Company Name">
+                            </div>
+                        </div>
+
+                        <div class="form_box">
+                            <div class="form_group">
+                                <label for="">Job Description</label><br>
+                                <textarea name="" id="Description5" class="form-field" cols="30" rows="10"
+                                    placeholder="Work Description"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form_box">
+                            <div class="btn-step">
+                                <button id="next-prev-2">&#65513; Back</button>
+                                <button id="next-step-3">Next &#65515;</button>
+                            </div>
+                        </div>
+                    </div>
+
+                        <!-- =============================== step_group 4 =========================== -->
+
+                        <div class="step_group" id="step-group-4">
+                            <div class="form_box">
+                                <div class="form_group">
+                                    <label for="">First Language</label><br>
+                                    <input type="text" id="FirstLanguage"  class="form-field skill_Input" placeholder="Enter Name">
+                                    <input type="text" id="FirstLanguagePercent" maxlength="3"  class="form-field percentInput" placeholder="Percent">
+                                </div>
+    
+                                <div class="form_group">
+                                    <label for="">Second Language</label><br>
+                                    <input type="text" id="SecondLanguage" class="form-field skill_Input" placeholder="Enter Name">
+                                    <input type="text" id="SecondLanguagePercent" maxlength="3" class="form-field percentInput" placeholder="Percent">
+                                </div>
+                            </div>
+
+                            <div class="form_box">
+                                <div class="form_group">
+                                    <label for="">Other Language</label><br>
+                                    <input type="text" id="ThirdLanguage" class="form-field skill_Input " placeholder="Enter Name">
+                                    <input type="text" id="ThirdLanguagePercent" maxlength="3" class="form-field percentInput" placeholder="Percent">
+                                </div>
+    
+                                <div class="form_group">
+                                    <label for="">Other Language</label><br>
+                                    <input type="text" id="ForthLanguage" class="form-field skill_Input" placeholder="Enter Name">
+                                    <input type="text" id="ForthLanguagePercent"  maxlength="3" class="form-field percentInput" placeholder="Percent">
+                                </div>
+                            </div>
+                            <br>
+                            <div>
+                                <h1 class="form_title">Advance Skills Set</h1><br>
+                            </div>
+    
+                            <div class="form_box">
+                                <div class="form_group">
+                                    <label for="">Skill Name</label><br>
+                                    <input type="text" id="FirstSkill"  class="form-field skill_Input" placeholder="Enter Name">
+                                    <input type="text" id="FirstSkillPercent"  maxlength="3" class="form-field percentInput" placeholder="Percent">
+                                </div>
+    
+                                <div class="form_group">
+                                    <label for="">Skill Name</label><br>
+                                    <input type="text" id="SecondSkill"  class="form-field skill_Input" placeholder="Enter Name">
+                                    <input type="text" id="SecondSkillPercent"  maxlength="3"  class="form-field percentInput" placeholder="Percent">
+                                </div>
+                            </div>
+
+                            <div class="form_box">
+                                <div class="form_group">
+                                    <label for="">Skill Name</label><br>
+                                    <input type="text" id="ThirdSkill"  class="form-field skill_Input" placeholder="Enter Name">
+                                    <input type="text" id="ThirdSkillPercent"  maxlength="3" class="form-field percentInput" placeholder="Percent">
+                                </div>
+    
+                                <div class="form_group">
+                                    <label for="">Skill Name</label><br>
+                                    <input type="text" id="ForthSkill" class="form-field skill_Input" placeholder="Enter Name">
+                                    <input type="text" id="ForthSkillPercent"  maxlength="3" class="form-field percentInput" placeholder="Percent">
+                                </div>
+                            </div>
+
+                            <div class="form_box">
+                                <div class="form_group">
+                                    <label for="">Skill Name</label><br>
+                                    <input type="text" id="FifthSkill" class="form-field skill_Input" placeholder="Enter Name">
+                                    <input type="text" id="FifthSkillPercent" maxlength="3" class="form-field percentInput" placeholder="Percent">
+                                </div>
+    
+                                <div class="form_group">
+                                    <label for="">Skill Name</label><br>
+                                    <input type="text" id="SixthSkill" class="form-field skill_Input" placeholder="Enter Name">
+                                    <input type="text" id="SixthSkillPercent" maxlength="3" class="form-field percentInput" placeholder="Percent">
+                                </div>
+                            </div>
+
+                            <div class="form_box">
+                                <div class="form_group">
+                                    <label for="">Skill Name</label><br>
+                                    <input type="text" id="SeventhSkill" class="form-field skill_Input" placeholder="Enter Name">
+                                    <input type="text" id="SeventhSkillPercent" maxlength="3" class="form-field percentInput" placeholder="Percent">
+                                </div>
+    
+                                <div class="form_group">
+                                    <label for="">Skill Name</label><br>
+                                    <input type="text" id="EightSkill" class="form-field skill_Input" placeholder="Enter Name">
+                                    <input type="text" id="EightSkillPercent" maxlength="3" class="form-field percentInput" placeholder="Percent">
+                                </div>
+                            </div>
+                            
+                            <br>
+
+                            <div>
+                                <h1 class="form_title">Interest & Hobbies</h1><br>
+                            </div>
+
+                            <div class="form_box">
+                                <div class="form_group">
+                                    <label for="">Enter Name</label><br>
+                                    <input type="text" id="first_hobby"  class="form-field" placeholder="Interest OR Hobbies">
+                                </div>
+    
+                                <div class="form_group">
+                                    <label for="">Enter Name</label><br>
+                                    <input type="text" id="second_hobby"  class="form-field" placeholder="Interest OR Hobbies">
+                                </div>
+                            </div>
+    
+                            <div class="form_box">
+                                <div class="form_group">
+                                    <label for="">Enter Name</label><br>
+                                    <input type="text" id="third_hobby" class="form-field" placeholder="Interest OR Hobbies">
+                                </div>
+    
+                                <div class="form_group">
+                                    <label for="">Enter Name</label><br>
+                                    <input type="text" id="forth_hobby" class="form-field" placeholder="Interest OR Hobbies">
+                                </div>
+                            </div>
+    
+                            <br>
+                            <div>
+                                <h1 class="form_title">Achievement OR Certification</h1><br>
+                            </div>
+
+                            <div class="form_box">
+                                <div class="form_group">
+                                    <label for="">Enter Name</label><br>
+                                    <input type="text" id="first_certification" class="form-field" placeholder="Achievement OR Certification">
+                                </div>
+    
+                                <div class="form_group">
+                                    <label for="">Enter Name</label><br>
+                                    <input type="text" id="second_certification" class="form-field" placeholder="Achievement OR Certification">
+                                </div>
+                            </div>
+    
+                            <div class="form_box">
+                                <div class="form_group">
+                                    <label for="">Enter Name</label><br>
+                                    <input type="text" id="third_certification" class="form-field" placeholder="Achievement OR Certification">
+                                </div>
+    
+                                <div class="form_group">
+                                    <label for="">Enter Name</label><br>
+                                    <input type="text" id="forth_certification" class="form-field" placeholder="Achievement OR Certification">
+                                </div>
+                            </div>
+                            
+                            <div class="form_box">
+                                <div class="btn-step">
+                                    <button id="next-prev-3">&#65513; Back</button>
+                                    <button type="submit" id="next-step-4">save</button>
+                                </div>
+                            </div>
+                            
+                    </div>
+
+                </div>
+
+                
+
+
+
+                        <!-- ================== Success Message ============================= -->
+                <div class="success_box" id="success_box">
+                    <span class="done" id="done">&#10004;</span>
+                    <p class="success-text" id="success-text">Your Resume Build Successfully. </p>
+                    <button class="preview" id="preview"  type="">Preview</button>
+                    <img src="" alt="">
+                </div>
+            </form>
+        </div>
+    </section>
+    </div>
+</body>
+<script src="app.js"></script>
+
+
+</html>
