@@ -1,158 +1,323 @@
-let userName = document.getElementById("userName");
-let userPost = document.getElementById("userPost");
-let profilePic = document.getElementById("profilePic");
-let userPhone = document.getElementById("userPhone");
-let userEmail = document.getElementById("userEmail");
-let userAddress = document.getElementById("userAddress");
-let userPortfolio = document.getElementById("userPortfolio");
-let linkedinUser = document.getElementById("linkedinUser");
-let objectives = document.getElementById("objectives");
+let userName = document.getElementById("userName")! as HTMLHeadingElement;
+let userPost = document.getElementById("userPost")! as HTMLHeadingElement;
+let profilePic = document.getElementById("profilePic")! as HTMLImageElement;
+let userPhone = document.getElementById("userPhone")! as HTMLSpanElement;
+let userEmail = document.getElementById("userEmail")! as HTMLSpanElement;
+let userAddress = document.getElementById("userAddress")! as HTMLSpanElement;
+let userPortfolio = document.getElementById("userPortfolio")! as HTMLSpanElement;
+let linkedinUser = document.getElementById("linkedinUser")! as HTMLSpanElement;
+let objectives = document.getElementById("objectives")! as HTMLParagraphElement;
 
-let firstYearstart = document.getElementById("firstYearstart");
-let firstYearend = document.getElementById("firstYearend");
-let Universityname = document.getElementById("Universityname");
-let bechlordegree = document.getElementById("bechlordegree");
+let firstYearstart = document.getElementById("firstYearstart")! as HTMLHeadingElement;
+let firstYearend = document.getElementById("firstYearend")! as HTMLHeadingElement;
+let Universityname = document.getElementById("Universityname")! as HTMLHeadingElement;
+let bechlordegree = document.getElementById("bechlordegree")! as HTMLHeadingElement;
 
-let secondYearstart = document.getElementById("secondYearstart");
-let secondYearend = document.getElementById("secondYearend");
-let Interdegree = document.getElementById("Interdegree");
-let collegename = document.getElementById("collegename");
+let secondYearstart = document.getElementById("secondYearstart")! as HTMLHeadingElement;
+let secondYearend = document.getElementById("secondYearend")! as HTMLHeadingElement;
+let Interdegree = document.getElementById("Interdegree")! as HTMLHeadingElement;
+let collegename = document.getElementById("collegename")! as HTMLHeadingElement;
 
-let thirdYearstart = document.getElementById("thirdYearstart");
-let thirdYearend = document.getElementById("thirdYearend");
-let schoolname = document.getElementById("schoolname");
-let Matricdegree = document.getElementById("Matricdegree");
+let thirdYearstart = document.getElementById("thirdYearstart")! as HTMLHeadingElement;
+let thirdYearend = document.getElementById("thirdYearend")! as HTMLHeadingElement;
+let schoolname = document.getElementById("schoolname")! as HTMLHeadingElement;
+let Matricdegree = document.getElementById("Matricdegree")! as HTMLHeadingElement;
 
-let first_job = document.getElementById("first_job");
-let second_job = document.getElementById("second_job");
-let third_job = document.getElementById("third_job");
-let forth_job = document.getElementById("forth_job");
-let fifth_job = document.getElementById("fifth_job");
+let first_job = document.getElementById("first_job")! as HTMLDivElement;
+let second_job = document.getElementById("second_job")! as HTMLDivElement;
+let third_job = document.getElementById("third_job")! as HTMLDivElement;
+let forth_job = document.getElementById("forth_job")! as HTMLDivElement;
+let fifth_job = document.getElementById("fifth_job")! as HTMLDivElement;
 
-let jobExpDate1 = document.getElementById("jobExpDate1");
-let company1 = document.getElementById("company1");
-let jobPost1 = document.getElementById("jobPost1");
-let jobDescription1 = document.getElementById("jobDescription1");
+let jobExpDate1 = document.getElementById("jobExpDate1")! as HTMLHeadingElement;
+let company1 = document.getElementById("company1")! as HTMLHeadingElement;
+let jobPost1 = document.getElementById("jobPost1")! as HTMLHeadingElement;
+let jobDescription1 = document.getElementById("jobDescription1")! as HTMLParagraphElement;
 
-let jobExpDate2 = document.getElementById("jobExpDate2");
-let company2 = document.getElementById("company2");
-let jobPost2 = document.getElementById("jobPost2");
-let jobDescription2 = document.getElementById("jobDescription2");
+let jobExpDate2 = document.getElementById("jobExpDate2")! as HTMLHeadingElement;
+let company2 = document.getElementById("company2")! as HTMLHeadingElement;
+let jobPost2 = document.getElementById("jobPost2")! as HTMLHeadingElement;
+let jobDescription2 = document.getElementById("jobDescription2")! as HTMLParagraphElement;
 
-let jobExpDate3 = document.getElementById("jobExpDate3");
-let company3 = document.getElementById("company3");
-let jobPost3 = document.getElementById("jobPost3");
-let jobDescription3 = document.getElementById("jobDescription3");
+let jobExpDate3 = document.getElementById("jobExpDate3")! as HTMLHeadingElement;
+let company3 = document.getElementById("company3")! as HTMLHeadingElement;
+let jobPost3 = document.getElementById("jobPost3")! as HTMLHeadingElement;
+let jobDescription3 = document.getElementById("jobDescription3")! as HTMLParagraphElement;
 
-let jobExpDate4 = document.getElementById("jobExpDate4");
-let company4 = document.getElementById("company4");
-let jobPost4 = document.getElementById("jobPost4");
-let jobDescription4 = document.getElementById("jobDescription4");
+let jobExpDate4 = document.getElementById("jobExpDate4")! as HTMLHeadingElement;
+let company4 = document.getElementById("company4")! as HTMLHeadingElement;
+let jobPost4 = document.getElementById("jobPost4")! as HTMLHeadingElement;
+let jobDescription4 = document.getElementById("jobDescription4")! as HTMLParagraphElement;
 
-let jobExpDate5 = document.getElementById("jobExpDate5");
-let company5 = document.getElementById("company5");
-let jobPost5 = document.getElementById("jobPost5");
-let jobDescription5 = document.getElementById("jobDescription5");
+let jobExpDate5 = document.getElementById("jobExpDate5")! as HTMLHeadingElement;
+let company5 = document.getElementById("company5")! as HTMLHeadingElement;
+let jobPost5 = document.getElementById("jobPost5")! as HTMLHeadingElement;
+let jobDescription5 = document.getElementById("jobDescription5")! as HTMLParagraphElement;
 
-let FirstLanguage = document.getElementById("FirstLanguage");
-let FirstLanguagePercent = document.getElementById("FirstLanguagePercent");
+let FirstLanguage = document.getElementById("FirstLanguage")! as HTMLSpanElement;
+let FirstLanguagePercent = document.getElementById("FirstLanguagePercent")! as HTMLDivElement;
 
-let SecondLanguage = document.getElementById("SecondLanguage");
-let SecondLanguagePercent = document.getElementById("SecondLanguagePercent");
+let SecondLanguage = document.getElementById("SecondLanguage")! as HTMLSpanElement;
+let SecondLanguagePercent = document.getElementById("SecondLanguagePercent")! as HTMLDivElement;
 
-let ThirdLanguage = document.getElementById("ThirdLanguage");
-let ThirdLanguagePercent = document.getElementById("ThirdLanguagePercent");
+let ThirdLanguage = document.getElementById("ThirdLanguage")! as HTMLSpanElement;
+let ThirdLanguagePercent = document.getElementById("ThirdLanguagePercent")! as HTMLDivElement;
 
-let ForthLanguage = document.getElementById("ForthLanguage");
-let ForthLanguagePercent = document.getElementById("ForthLanguagePercent");
+let ForthLanguage = document.getElementById("ForthLanguage")! as HTMLSpanElement;
+let ForthLanguagePercent = document.getElementById("ForthLanguagePercent")! as HTMLDivElement;
 
-let FirstSkill = document.getElementById("FirstSkill");
-let FirstSkillPercent = document.getElementById("FirstSkillPercent");
+let FirstSkill = document.getElementById("FirstSkill")! as HTMLHeadingElement;
+let FirstSkillPercent = document.getElementById("FirstSkillPercent")! as HTMLDivElement;
 
-let SecondSkill = document.getElementById("SecondSkill");
-let SecondSkillPercent = document.getElementById("SecondSkillPercent");
+let SecondSkill = document.getElementById("SecondSkill")! as HTMLHeadingElement;
+let SecondSkillPercent = document.getElementById("SecondSkillPercent")! as HTMLDivElement;
 
-let ThirdSkill = document.getElementById("ThirdSkill");
-let ThirdSkillPercent = document.getElementById("ThirdSkillPercent");
+let ThirdSkill = document.getElementById("ThirdSkill")! as HTMLHeadingElement;
+let ThirdSkillPercent = document.getElementById("ThirdSkillPercent")! as HTMLDivElement;
 
-let ForthSkill = document.getElementById("ForthSkill");
-let ForthSkillPercent = document.getElementById("ForthSkillPercent");
+let ForthSkill = document.getElementById("ForthSkill")! as HTMLHeadingElement;
+let ForthSkillPercent = document.getElementById("ForthSkillPercent")! as HTMLDivElement;
 
-let FifthSkill = document.getElementById("FifthSkill");
-let FifthSkillPercent = document.getElementById("FifthSkillPercent");
+let FifthSkill = document.getElementById("FifthSkill")! as HTMLHeadingElement;
+let FifthSkillPercent = document.getElementById("FifthSkillPercent")! as HTMLDivElement;
 
-let SixthSkill = document.getElementById("SixthSkill");
-let SixthSkillPercent = document.getElementById("SixthSkillPercent");
+let SixthSkill = document.getElementById("SixthSkill")! as HTMLHeadingElement;
+let SixthSkillPercent = document.getElementById("SixthSkillPercent")! as HTMLDivElement;
 
-let SeventhSkill = document.getElementById("SeventhSkill");
-let SeventhSkillPercent = document.getElementById("SeventhSkillPercent");
+let SeventhSkill = document.getElementById("SeventhSkill")! as HTMLHeadingElement;
+let SeventhSkillPercent = document.getElementById("SeventhSkillPercent")! as HTMLDivElement;
 
-let EightSkill = document.getElementById("EightSkill");
-let EightSkillPercent = document.getElementById("EightSkillPercent");
+let EightSkill = document.getElementById("EightSkill")! as HTMLHeadingElement;
+let EightSkillPercent = document.getElementById("EightSkillPercent")! as HTMLDivElement;
 
-let first_hobby = document.getElementById("first_hobby");
-let second_hobby = document.getElementById("second_hobby");
-let third_hobby = document.getElementById("third_hobby");
-let forth_hobby = document.getElementById("forth_hobby");
+let first_hobby = document.getElementById("first_hobby")! as HTMLSpanElement;
+let second_hobby = document.getElementById("second_hobby")! as HTMLSpanElement;
+let third_hobby = document.getElementById("third_hobby")! as HTMLSpanElement;
+let forth_hobby = document.getElementById("forth_hobby")! as HTMLSpanElement;
 
-let certifications = document.getElementById("certifications");
-let first_certification = document.getElementById("first_certification");
-let second_certification = document.getElementById("second_certification");
-let third_certification = document.getElementById("third_certification");
-let forth_certification = document.getElementById("forth_certification");
+let certifications = document.getElementById("certifications")! as HTMLDivElement;
+let first_certification = document.getElementById("first_certification")! as HTMLSpanElement;
+let second_certification = document.getElementById("second_certification")! as HTMLSpanElement;
+let third_certification = document.getElementById("third_certification")! as HTMLSpanElement;
+let forth_certification = document.getElementById("forth_certification")! as HTMLSpanElement;
 
-let profileImg = document.getElementById("profileImg");
-let fa_phone = document.getElementById("fa-phone");
-let fa_map_marker = document.getElementById("fa-map-marker");
-let fa_envelope = document.getElementById("fa-envelope");
-let fa_globe = document.getElementById("fa-globe");
-let fa__linkedin = document.getElementById("fa-linkedin-in");
+let profileImg = document.getElementById("profileImg")! as HTMLDivElement;
+let fa_phone = document.getElementById("fa-phone")! as HTMLDivElement;
+let fa_map_marker = document.getElementById("fa-map-marker")! as HTMLDivElement;
+let fa_envelope = document.getElementById("fa-envelope")! as HTMLDivElement;
+let fa_globe = document.getElementById("fa-globe")! as HTMLDivElement;
+let fa__linkedin = document.getElementById("fa-linkedin-in")! as HTMLDivElement;
 
-let University = document.getElementById("University");
-let college = document.getElementById("University");
-let school = document.getElementById("school");
+let University = document.getElementById("University")! as HTMLDivElement;
+let college = document.getElementById("University")! as HTMLDivElement;
+let school = document.getElementById("school")! as HTMLDivElement;
 
-let FirstLang = document.getElementById("FirstLang");
-let SecondLang = document.getElementById("SecondLang");
-let ThirdLang = document.getElementById("ThirdLang");
-let ForthLang = document.getElementById("ForthLang");
+let FirstLang = document.getElementById("FirstLang")! as HTMLDivElement;
+let SecondLang = document.getElementById("SecondLang")! as HTMLDivElement;
+let ThirdLang = document.getElementById("ThirdLang")! as HTMLDivElement;
+let ForthLang = document.getElementById("ForthLang")! as HTMLDivElement;
 
-let interests = document.getElementById("interests");
-let first_interest = document.getElementById("first_interest");
-let second_interest = document.getElementById("second_interest");
-let third_interest = document.getElementById("third_interest");
-let forth_interest = document.getElementById("forth_interest");
+let interests = document.getElementById("interests")! as HTMLDivElement;
+let first_interest = document.getElementById("first_interest")! as HTMLElement;
+let second_interest = document.getElementById("second_interest")! as HTMLElement;
+let third_interest = document.getElementById("third_interest")! as HTMLElement;
+let forth_interest = document.getElementById("forth_interest")! as HTMLElement;
 
-let first_certify = document.getElementById("first_certify");
-let second_certify = document.getElementById("second_certify");
-let third_certify = document.getElementById("third_certify");
-let forth_certify = document.getElementById("forth_certify");
+let first_certify = document.getElementById("first_certify")! as HTMLElement;
+let second_certify = document.getElementById("second_certify")! as HTMLElement;
+let third_certify = document.getElementById("third_certify")! as HTMLElement;
+let forth_certify = document.getElementById("forth_certify")! as HTMLElement;
 
-let Skill1 = document.getElementById("Skill1");
-let Skill2 = document.getElementById("Skill2");
-let Skill3 = document.getElementById("Skill3");
-let Skill4 = document.getElementById("Skill4");
-let Skill5 = document.getElementById("Skill5");
-let Skill6 = document.getElementById("Skill6");
-let Skill7 = document.getElementById("Skill7");
-let Skill8 = document.getElementById("Skill8");
+let Skill1 = document.getElementById("Skill1")! as HTMLDivElement;
+let Skill2 = document.getElementById("Skill2")! as HTMLDivElement;
+let Skill3 = document.getElementById("Skill3")! as HTMLDivElement;
+let Skill4 = document.getElementById("Skill4")! as HTMLDivElement;
+let Skill5 = document.getElementById("Skill5")! as HTMLDivElement;
+let Skill6 = document.getElementById("Skill6")! as HTMLDivElement;
+let Skill7 = document.getElementById("Skill7")! as HTMLDivElement;
+let Skill8 = document.getElementById("Skill8")! as HTMLDivElement;
 
 
-let editResume = document.getElementById("editResume");
+let editResume = document.getElementById("editResume")! as HTMLButtonElement;
 
 editResume.addEventListener("click",()=>{
     setTimeout(() => {
         if (true) {
 
-            window.location.href = "./editableForm.html"
+            window.location.href = "../editableResume/editableForm.html"
         }
     }, 500);
 })
 
 
+interface SaveUsers {
+    firstName: string,
+    lastName: string,
+    profileImage: string,
+    email: string,
+    post: string,
+    phone: number,
+    address: string,
+    profileUrl: string,
+    linkedinUrl: string,
+    objectives: string,
+    firstYearStart: string,
+    firstYearEnd: string,
+    UniversityName: string,
+    bechlorDegree: string,
+    secondYearStart: string,
+    secondYearEnd: string,
+    collegeName: string,
+    InterDegree: string,
+    thirdYearStart: string,
+    thirdYearEnd: string,
+    schoolName: string,
+    MatricDegree: string,
+    StartYear1: string,
+    StartYear2: string,
+    jobPost1: string,
+    fisrtCompany: string,
+    Description1: string,
+    StartYear3: string,
+    StartYear4: string,
+    jobPost2: string,
+    secondCompany: string,
+    Description2: string,
+    StartYear5: string,
+    StartYear6: string,
+    jobPost3: string,
+    thirdCompany: string,
+    Description3: string,
+    StartYear7: string,
+    StartYear8: string,
+    jobPost4: string,
+    forthCompany: string,
+    Description4: string,
+    StartYear9: string,
+    StartYear0: string,
+    jobPost5: string,
+    fifthCompany: string,
+    Description5: string,
+    FirstLanguage: string,
+    FirstLanguagePercent: string,
+    SecondLanguage: string,
+    SecondLanguagePercent: string,
+    ThirdLanguage: string,
+    ThirdLanguagePercent: string,
+    ForthLanguage: string,
+    ForthLanguagePercent: string,
+    FirstSkill: string,
+    FirstSkillPercent: string,
+    SecondSkill: string,
+    SecondSkillPercent: string,
+    ThirdSkill: string,
+    ThirdSkillPercent: string,
+    ForthSkill: string,
+    ForthSkillPercent: string,
+    FifthSkill: string,
+    FifthSkillPercent: string,
+    SixthSkill: string,
+    SixthSkillPercent: string,
+    SeventhSkill: string,
+    SeventhSkillPercent: string,
+    EightSkill: string,
+    EightSkillPercent: string,
+    first_hobby: string,
+    second_hobby: string,
+    third_hobby: string,
+    forth_hobby: string,
+    first_certification: string,
+    second_certification: string,
+    third_certification: string,
+    forth_certification: string,
+
+
+}
+
 function getData() {
-    let saveUsers = {};
-    let users = localStorage.getItem("users");
+    let saveUsers: SaveUsers = {
+        firstName: "",
+        lastName: "",
+        profileImage: "",
+        email: "",
+        post: "",
+        phone: 0,
+        address: "",
+        profileUrl: "",
+        linkedinUrl: "",
+        objectives: "",
+        firstYearStart: "",
+        firstYearEnd: "",
+        UniversityName: "",
+        bechlorDegree: "",
+        secondYearStart: "",
+        secondYearEnd: "",
+        collegeName: "",
+        InterDegree: "",
+        thirdYearStart: "",
+        thirdYearEnd: "",
+        schoolName: "",
+        MatricDegree: "",
+        StartYear1: "",
+        StartYear2: "",
+        jobPost1: "",
+        fisrtCompany: "",
+        Description1: "",
+        StartYear3: "",
+        StartYear4: "",
+        jobPost2: "",
+        secondCompany: "",
+        Description2: "",
+        StartYear5: "",
+        StartYear6: "",
+        jobPost3: "",
+        thirdCompany: "",
+        Description3: "",
+        StartYear7: "",
+        StartYear8: "",
+        jobPost4: "",
+        forthCompany: "",
+        Description4: "",
+        StartYear9: "",
+        StartYear0: "",
+        jobPost5: "",
+        fifthCompany: "",
+        Description5: "",
+        FirstLanguage: "",
+        FirstLanguagePercent: "",
+        SecondLanguage: "",
+        SecondLanguagePercent: "",
+        ThirdLanguage: "",
+        ThirdLanguagePercent: "",
+        ForthLanguage: "",
+        ForthLanguagePercent: "",
+        FirstSkill: "",
+        FirstSkillPercent: "",
+        SecondSkill: "",
+        SecondSkillPercent: "",
+        ThirdSkill: "",
+        ThirdSkillPercent: "",
+        ForthSkill: "",
+        ForthSkillPercent: "",
+        FifthSkill: "",
+        FifthSkillPercent: "",
+        SixthSkill: "",
+        SixthSkillPercent: "",
+        SeventhSkill: "",
+        SeventhSkillPercent: "",
+        EightSkill: "",
+        EightSkillPercent: "",
+        first_hobby: "",
+        second_hobby: "",
+        third_hobby: "",
+        forth_hobby: "",
+        first_certification: "",
+        second_certification: "",
+        third_certification: "",
+        forth_certification: ""
+    };
+
+    let users:any = localStorage.getItem("users");
 
     if (users) {
         users = JSON.parse(users)
@@ -192,7 +357,7 @@ function getData() {
         userPost.innerText = `${saveUsers.post}`
     }
 
-    if (saveUsers.phone == undefined || saveUsers.phone == "") {
+    if (saveUsers.phone == undefined || saveUsers.phone == 0) {
         fa_phone.style.display = "none"
     } else {
         userPhone.innerText = `${saveUsers.phone}`
@@ -323,8 +488,8 @@ function getData() {
     if(
         saveUsers.first_hobby !== undefined || saveUsers.first_hobby !== ""
         && saveUsers.second_hobby !== undefined || saveUsers.second_hobby !== ""
-        && saveUsers.third_hobby !== undefined || saveUsers.third_hobby == !"" 
-        && saveUsers.forth_hobby !== undefined || saveUsers.forth_hobby == !"" 
+        && saveUsers.third_hobby !== undefined || saveUsers.third_hobby !== "" 
+        && saveUsers.forth_hobby !== undefined || saveUsers.forth_hobby !==  "" 
     ){
         interests.style.display = "block"
     }
@@ -442,7 +607,7 @@ function getData() {
         && saveUsers.StartYear6 == undefined || saveUsers.StartYear6 == ""
 
         && saveUsers.thirdCompany == undefined || saveUsers.thirdCompany == ""
-        && saveUsers.jobPost3 == undefined || saveUsers.jjobPost3obPost1 == ""
+        && saveUsers.jobPost3 == undefined || saveUsers.jobPost3 == ""
         && saveUsers.Description3 == undefined || saveUsers.Description3 == ""
 
     ) {

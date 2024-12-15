@@ -1,133 +1,132 @@
+let form = document.getElementById("multi-step-form")! as HTMLFormElement;
+let formContaierBox = document.getElementById("form-contaier-box")! as HTMLDivElement;
 
-let form = document.getElementById("multi-step-form");
-let formContaierBox = document.getElementById("form-contaier-box");
+let step2 = document.getElementById("step-2")! as HTMLElement;
+let step3 = document.getElementById("step-3")! as HTMLElement;
+let step4 = document.getElementById("step-4")! as HTMLElement;
 
-let step2 = document.getElementById("step-2");
-let step3 = document.getElementById("step-3");
-let step4 = document.getElementById("step-4");
+let stepGroup1 = document.getElementById("step-group-1")! as HTMLDivElement;
+let stepGroup2 = document.getElementById("step-group-2")! as HTMLDivElement;
+let stepGroup3 = document.getElementById("step-group-3")! as HTMLDivElement;
+let stepGroup4 = document.getElementById("step-group-4")! as HTMLDivElement;
 
-let stepGroup1 = document.getElementById("step-group-1");
-let stepGroup2 = document.getElementById("step-group-2");
-let stepGroup3 = document.getElementById("step-group-3");
-let stepGroup4 = document.getElementById("step-group-4");
+let nextStep1 = document.getElementById("next-step-1")! as HTMLButtonElement;
+let nextStep2 = document.getElementById("next-step-2")! as HTMLButtonElement;;
+let nextStep3 = document.getElementById("next-step-3")! as HTMLButtonElement;;
+let nextStep4 = document.getElementById("next-step-4")! as HTMLButtonElement;; // update
 
-let nextStep1 = document.getElementById("next-step-1");
-let nextStep2 = document.getElementById("next-step-2");
-let nextStep3 = document.getElementById("next-step-3");
-let nextStep4 = document.getElementById("next-step-4"); // update
+let prevStep1 = document.getElementById("next-prev-1")! as HTMLButtonElement;
+let prevStep2 = document.getElementById("next-prev-2")! as HTMLButtonElement;
+let prevStep3 = document.getElementById("next-prev-3")! as HTMLButtonElement;
 
-let prevStep1 = document.getElementById("next-prev-1");
-let prevStep2 = document.getElementById("next-prev-2");
-let prevStep3 = document.getElementById("next-prev-3");
-
-let successBox = document.getElementById("success_box");
-let preview = document.getElementById("preview");
-
-
-let firstName = document.getElementById("firstName");
-let lastName = document.getElementById("lastName");
-let email = document.getElementById("email");
-let post = document.getElementById("post");
-let phone = document.getElementById("phone");
-let profileImage = document.getElementById("profileImage");
-let profileUrl = document.getElementById("profileUrl");
-let linkedinUrl = document.getElementById("linkedinUrl");
-let address = document.getElementById("address");
-let objectives = document.getElementById("objectives");
-
-let firstYearStart = document.getElementById("firstYearStart");
-let firstYearEnd = document.getElementById("firstYearEnd");
-let UniversityName = document.getElementById("UniversityName");
-let bechlorDegree = document.getElementById("bechlorDegree");
-
-let secondYearStart = document.getElementById("secondYearStart");
-let secondYearEnd = document.getElementById("secondYearEnd");
-let collegeName = document.getElementById("collegeName");
-let InterDegree = document.getElementById("InterDegree");
-
-let thirdYearStart = document.getElementById("thirdYearStart");
-let thirdYearEnd = document.getElementById("thirdYearEnd");
-let schoolName = document.getElementById("schoolName");
-let MatricDegree = document.getElementById("MatricDegree");
-
-let StartYear1 = document.getElementById("StartYear1");
-let StartYear2 = document.getElementById("StartYear2");
-let jobPost1 = document.getElementById("jobPost1");
-let fisrtCompany = document.getElementById("fisrtCompany");
-let Description1 = document.getElementById("Description1");
-
-let StartYear3 = document.getElementById("StartYear3");
-let StartYear4 = document.getElementById("StartYear4");
-let jobPost2 = document.getElementById("jobPost2");
-let secondCompany = document.getElementById("secondCompany");
-let Description2 = document.getElementById("Description2");
-
-let StartYear5 = document.getElementById("StartYear5");
-let StartYear6 = document.getElementById("StartYear6");
-let jobPost3 = document.getElementById("jobPost3");
-let thirdCompany = document.getElementById("thirdCompany");
-let Description3 = document.getElementById("Description3");
-
-let StartYear7 = document.getElementById("StartYear7");
-let StartYear8 = document.getElementById("StartYear8");
-let jobPost4 = document.getElementById("jobPost4");
-let forthCompany = document.getElementById("forthCompany");
-let Description4 = document.getElementById("Description4");
-
-let StartYear9 = document.getElementById("StartYear9");
-let StartYear0 = document.getElementById("StartYear0");
-let jobPost5 = document.getElementById("jobPost5");
-let fifthCompany = document.getElementById("fifthCompany");
-let Description5 = document.getElementById("Description5");
-
-let FirstLanguage = document.getElementById("FirstLanguage");
-let FirstLanguagePercent = document.getElementById("FirstLanguagePercent");
-
-let SecondLanguage = document.getElementById("SecondLanguage");
-let SecondLanguagePercent = document.getElementById("SecondLanguagePercent");
-
-let ThirdLanguage = document.getElementById("ThirdLanguage");
-let ThirdLanguagePercent = document.getElementById("ThirdLanguagePercent");
-
-let ForthLanguage = document.getElementById("ForthLanguage");
-let ForthLanguagePercent = document.getElementById("ForthLanguagePercent");
-
-let FirstSkill = document.getElementById("FirstSkill");
-let FirstSkillPercent = document.getElementById("FirstSkillPercent");
-
-let SecondSkill = document.getElementById("SecondSkill");
-let SecondSkillPercent = document.getElementById("SecondSkillPercent");
-
-let ThirdSkill = document.getElementById("ThirdSkill");
-let ThirdSkillPercent = document.getElementById("ThirdSkillPercent");
-
-let ForthSkill = document.getElementById("ForthSkill");
-let ForthSkillPercent = document.getElementById("ForthSkillPercent");
-
-let FifthSkill = document.getElementById("FifthSkill");
-let FifthSkillPercent = document.getElementById("FifthSkillPercent");
-
-let SixthSkill = document.getElementById("SixthSkill");
-let SixthSkillPercent = document.getElementById("SixthSkillPercent");
-
-let SeventhSkill = document.getElementById("SeventhSkill");
-let SeventhSkillPercent = document.getElementById("SeventhSkillPercent");
-
-let EightSkill = document.getElementById("EightSkill");
-let EightSkillPercent = document.getElementById("EightSkillPercent");
-
-let first_hobby = document.getElementById("first_hobby");
-let second_hobby = document.getElementById("second_hobby");
-let third_hobby = document.getElementById("third_hobby");
-let forth_hobby = document.getElementById("forth_hobby");
-
-let first_certification = document.getElementById("first_certification");
-let second_certification = document.getElementById("second_certification");
-let third_certification = document.getElementById("third_certification");
-let forth_certification = document.getElementById("forth_certification");
+let successBox = document.getElementById("success_box")! as HTMLDivElement;
+let preview = document.getElementById("preview")! as HTMLButtonElement;
 
 
-let upload_image = " ";
+let firstName = document.getElementById("firstName")! as HTMLInputElement;
+let lastName = document.getElementById("lastName")! as HTMLInputElement;
+let email = document.getElementById("email")! as HTMLInputElement;
+let post = document.getElementById("post")! as HTMLInputElement;
+let phone = document.getElementById("phone")! as HTMLInputElement;
+let profileImage = document.getElementById("profileImage")! as HTMLInputElement;
+let profileUrl = document.getElementById("profileUrl")! as HTMLInputElement;
+let linkedinUrl = document.getElementById("linkedinUrl")! as HTMLInputElement;
+let address = document.getElementById("address")! as HTMLInputElement;
+let objectives = document.getElementById("objectives")! as HTMLInputElement;
+
+let firstYearStart = document.getElementById("firstYearStart")! as HTMLInputElement;
+let firstYearEnd = document.getElementById("firstYearEnd")! as HTMLInputElement;
+let UniversityName = document.getElementById("UniversityName")! as HTMLInputElement;
+let bechlorDegree = document.getElementById("bechlorDegree")! as HTMLInputElement;
+
+let secondYearStart = document.getElementById("secondYearStart")! as HTMLInputElement;
+let secondYearEnd = document.getElementById("secondYearEnd")! as HTMLInputElement;
+let collegeName = document.getElementById("collegeName")! as HTMLInputElement;
+let InterDegree = document.getElementById("InterDegree")! as HTMLInputElement;
+
+let thirdYearStart = document.getElementById("thirdYearStart")! as HTMLInputElement;
+let thirdYearEnd = document.getElementById("thirdYearEnd")! as HTMLInputElement;
+let schoolName = document.getElementById("schoolName")! as HTMLInputElement;
+let MatricDegree = document.getElementById("MatricDegree")! as HTMLInputElement;
+
+let StartYear1 = document.getElementById("StartYear1")! as HTMLInputElement;
+let StartYear2 = document.getElementById("StartYear2")! as HTMLInputElement;
+let jobPost1 = document.getElementById("jobPost1")! as HTMLInputElement;
+let fisrtCompany = document.getElementById("fisrtCompany")! as HTMLInputElement;
+let Description1 = document.getElementById("Description1")! as HTMLInputElement;
+
+let StartYear3 = document.getElementById("StartYear3")! as HTMLInputElement;
+let StartYear4 = document.getElementById("StartYear4")! as HTMLInputElement;
+let jobPost2 = document.getElementById("jobPost2")! as HTMLInputElement;
+let secondCompany = document.getElementById("secondCompany")! as HTMLInputElement;
+let Description2 = document.getElementById("Description2")! as HTMLInputElement;
+
+let StartYear5 = document.getElementById("StartYear5")! as HTMLInputElement;
+let StartYear6 = document.getElementById("StartYear6")! as HTMLInputElement;
+let jobPost3 = document.getElementById("jobPost3")! as HTMLInputElement;
+let thirdCompany = document.getElementById("thirdCompany")! as HTMLInputElement;
+let Description3 = document.getElementById("Description3")! as HTMLInputElement;
+
+let StartYear7 = document.getElementById("StartYear7")! as HTMLInputElement;
+let StartYear8 = document.getElementById("StartYear8")! as HTMLInputElement;
+let jobPost4 = document.getElementById("jobPost4")! as HTMLInputElement;
+let forthCompany = document.getElementById("forthCompany")! as HTMLInputElement;
+let Description4 = document.getElementById("Description4")! as HTMLInputElement;
+
+let StartYear9 = document.getElementById("StartYear9")! as HTMLInputElement;
+let StartYear0 = document.getElementById("StartYear0")! as HTMLInputElement;
+let jobPost5 = document.getElementById("jobPost5")! as HTMLInputElement;
+let fifthCompany = document.getElementById("fifthCompany")! as HTMLInputElement;
+let Description5 = document.getElementById("Description5")! as HTMLInputElement;
+
+let FirstLanguage = document.getElementById("FirstLanguage")! as HTMLInputElement;
+let FirstLanguagePercent = document.getElementById("FirstLanguagePercent")! as HTMLInputElement;
+
+let SecondLanguage = document.getElementById("SecondLanguage")! as HTMLInputElement;
+let SecondLanguagePercent = document.getElementById("SecondLanguagePercent")! as HTMLInputElement;
+
+let ThirdLanguage = document.getElementById("ThirdLanguage")! as HTMLInputElement;
+let ThirdLanguagePercent = document.getElementById("ThirdLanguagePercent")! as HTMLInputElement;
+
+let ForthLanguage = document.getElementById("ForthLanguage")! as HTMLInputElement;
+let ForthLanguagePercent = document.getElementById("ForthLanguagePercent")! as HTMLInputElement;
+
+let FirstSkill = document.getElementById("FirstSkill")! as HTMLInputElement;
+let FirstSkillPercent = document.getElementById("FirstSkillPercent")! as HTMLInputElement;
+
+let SecondSkill = document.getElementById("SecondSkill")! as HTMLInputElement;
+let SecondSkillPercent = document.getElementById("SecondSkillPercent")! as HTMLInputElement;
+
+let ThirdSkill = document.getElementById("ThirdSkill")! as HTMLInputElement;
+let ThirdSkillPercent = document.getElementById("ThirdSkillPercent")! as HTMLInputElement;
+
+let ForthSkill = document.getElementById("ForthSkill")! as HTMLInputElement;
+let ForthSkillPercent = document.getElementById("ForthSkillPercent")! as HTMLInputElement;
+
+let FifthSkill = document.getElementById("FifthSkill")! as HTMLInputElement;
+let FifthSkillPercent = document.getElementById("FifthSkillPercent")! as HTMLInputElement;
+
+let SixthSkill = document.getElementById("SixthSkill")! as HTMLInputElement;
+let SixthSkillPercent = document.getElementById("SixthSkillPercent")! as HTMLInputElement;
+
+let SeventhSkill = document.getElementById("SeventhSkill")! as HTMLInputElement;
+let SeventhSkillPercent = document.getElementById("SeventhSkillPercent")! as HTMLInputElement;
+
+let EightSkill = document.getElementById("EightSkill")! as HTMLInputElement;
+let EightSkillPercent = document.getElementById("EightSkillPercent")! as HTMLInputElement;
+
+let first_hobby = document.getElementById("first_hobby")! as HTMLInputElement;
+let second_hobby = document.getElementById("second_hobby")! as HTMLInputElement;
+let third_hobby = document.getElementById("third_hobby")! as HTMLInputElement;
+let forth_hobby = document.getElementById("forth_hobby")! as HTMLInputElement;
+
+let first_certification = document.getElementById("first_certification")! as HTMLInputElement;
+let second_certification = document.getElementById("second_certification")! as HTMLInputElement;
+let third_certification = document.getElementById("third_certification")! as HTMLInputElement;
+let forth_certification = document.getElementById("forth_certification")! as HTMLInputElement;
+
+
+let upload_image:any = " ";
 
 if (profileImage) {
     profileImage.addEventListener("change", function (event) {
@@ -150,16 +149,180 @@ if (profileImage) {
 }
 
 
-function getData() {
-    let saveUsers = {};
+interface SaveUsers {
+    firstName: string,
+    lastName: string,
+    profileImage: string,
+    email: string,
+    post: string,
+    phone: number,
+    address: string,
+    profileUrl: string,
+    linkedinUrl: string,
+    objectives: string,
+    firstYearStart: string,
+    firstYearEnd: string,
+    UniversityName: string,
+    bechlorDegree: string,
+    secondYearStart: string,
+    secondYearEnd: string,
+    collegeName: string,
+    InterDegree: string,
+    thirdYearStart: string,
+    thirdYearEnd: string,
+    schoolName: string,
+    MatricDegree: string,
+    StartYear1: string,
+    StartYear2: string,
+    jobPost1: string,
+    fisrtCompany: string,
+    Description1: string,
+    StartYear3: string,
+    StartYear4: string,
+    jobPost2: string,
+    secondCompany: string,
+    Description2: string,
+    StartYear5: string,
+    StartYear6: string,
+    jobPost3: string,
+    thirdCompany: string,
+    Description3: string,
+    StartYear7: string,
+    StartYear8: string,
+    jobPost4: string,
+    forthCompany: string,
+    Description4: string,
+    StartYear9: string,
+    StartYear0: string,
+    jobPost5: string,
+    fifthCompany: string,
+    Description5: string,
+    FirstLanguage: string,
+    FirstLanguagePercent: string,
+    SecondLanguage: string,
+    SecondLanguagePercent: string,
+    ThirdLanguage: string,
+    ThirdLanguagePercent: string,
+    ForthLanguage: string,
+    ForthLanguagePercent: string,
+    FirstSkill: string,
+    FirstSkillPercent: string,
+    SecondSkill: string,
+    SecondSkillPercent: string,
+    ThirdSkill: string,
+    ThirdSkillPercent: string,
+    ForthSkill: string,
+    ForthSkillPercent: string,
+    FifthSkill: string,
+    FifthSkillPercent: string,
+    SixthSkill: string,
+    SixthSkillPercent: string,
+    SeventhSkill: string,
+    SeventhSkillPercent: string,
+    EightSkill: string,
+    EightSkillPercent: string,
+    first_hobby: string,
+    second_hobby: string,
+    third_hobby: string,
+    forth_hobby: string,
+    first_certification: string,
+    second_certification: string,
+    third_certification: string,
+    forth_certification: string,
 
-    let users = localStorage.getItem("users");
+
+}
+
+function getData() {
+    let saveUsers: SaveUsers = {
+        firstName: "",
+        lastName: "",
+        profileImage: "",
+        email: "",
+        post: "",
+        phone: 0,
+        address: "",
+        profileUrl: "",
+        linkedinUrl: "",
+        objectives: "",
+        firstYearStart: "",
+        firstYearEnd: "",
+        UniversityName: "",
+        bechlorDegree: "",
+        secondYearStart: "",
+        secondYearEnd: "",
+        collegeName: "",
+        InterDegree: "",
+        thirdYearStart: "",
+        thirdYearEnd: "",
+        schoolName: "",
+        MatricDegree: "",
+        StartYear1: "",
+        StartYear2: "",
+        jobPost1: "",
+        fisrtCompany: "",
+        Description1: "",
+        StartYear3: "",
+        StartYear4: "",
+        jobPost2: "",
+        secondCompany: "",
+        Description2: "",
+        StartYear5: "",
+        StartYear6: "",
+        jobPost3: "",
+        thirdCompany: "",
+        Description3: "",
+        StartYear7: "",
+        StartYear8: "",
+        jobPost4: "",
+        forthCompany: "",
+        Description4: "",
+        StartYear9: "",
+        StartYear0: "",
+        jobPost5: "",
+        fifthCompany: "",
+        Description5: "",
+        FirstLanguage: "",
+        FirstLanguagePercent: "",
+        SecondLanguage: "",
+        SecondLanguagePercent: "",
+        ThirdLanguage: "",
+        ThirdLanguagePercent: "",
+        ForthLanguage: "",
+        ForthLanguagePercent: "",
+        FirstSkill: "",
+        FirstSkillPercent: "",
+        SecondSkill: "",
+        SecondSkillPercent: "",
+        ThirdSkill: "",
+        ThirdSkillPercent: "",
+        ForthSkill: "",
+        ForthSkillPercent: "",
+        FifthSkill: "",
+        FifthSkillPercent: "",
+        SixthSkill: "",
+        SixthSkillPercent: "",
+        SeventhSkill: "",
+        SeventhSkillPercent: "",
+        EightSkill: "",
+        EightSkillPercent: "",
+        first_hobby: "",
+        second_hobby: "",
+        third_hobby: "",
+        forth_hobby: "",
+        first_certification: "",
+        second_certification: "",
+        third_certification: "",
+        forth_certification: ""
+    };
+
+    let users:any = localStorage.getItem("users");
 
     if (users) {
         users = JSON.parse(users)
     }
     else {
-        user = {}
+        users = []
     }
 
     for (let i = 0; i < users.length; i++) {
@@ -173,7 +336,7 @@ function getData() {
         profileImage.src = saveUsers.profileImage
         email.value = saveUsers.email
         post.value = saveUsers.post
-        phone.value = saveUsers.phone
+        phone.value = String(saveUsers.phone)
         address.value = saveUsers.address
         profileUrl.value = saveUsers.profileUrl
         linkedinUrl.value = saveUsers.linkedinUrl
@@ -443,7 +606,7 @@ nextStep4.addEventListener("click", () => {
         SecondSkillPercent.style.border = "1px solid #fff"
 
 
-        let users = localStorage.getItem("users");
+        let users:any = localStorage.getItem("users");
 
         if (users) {
             users = JSON.parse(users)
@@ -459,7 +622,7 @@ nextStep4.addEventListener("click", () => {
             profileImage: upload_image,
             email: email.value,
             post: post.value,
-            phone: phone.value,
+            phone: +phone.value,
             address: address.value,
             profileUrl: profileUrl.value,
             linkedinUrl: linkedinUrl.value,
@@ -677,7 +840,7 @@ preview.addEventListener("click", () => {
     setTimeout(() => {
         if (true) {
 
-            window.location.href = "./resume.html"
+            window.location.href = "../resume/resume.html"
         }
     }, 500);
 })

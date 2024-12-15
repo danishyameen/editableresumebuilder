@@ -13,7 +13,7 @@ var nextStep2 = document.getElementById("next-step-2");
 var nextStep3 = document.getElementById("next-step-3");
 ;
 var nextStep4 = document.getElementById("next-step-4");
-; // save
+; // update
 var prevStep1 = document.getElementById("next-prev-1");
 var prevStep2 = document.getElementById("next-prev-2");
 var prevStep3 = document.getElementById("next-prev-3");
@@ -118,6 +118,180 @@ if (profileImage) {
 else {
     console.error("Element with ID 'profileImage' not found.");
 }
+function getData() {
+    var saveUsers = {
+        firstName: "",
+        lastName: "",
+        profileImage: "",
+        email: "",
+        post: "",
+        phone: 0,
+        address: "",
+        profileUrl: "",
+        linkedinUrl: "",
+        objectives: "",
+        firstYearStart: "",
+        firstYearEnd: "",
+        UniversityName: "",
+        bechlorDegree: "",
+        secondYearStart: "",
+        secondYearEnd: "",
+        collegeName: "",
+        InterDegree: "",
+        thirdYearStart: "",
+        thirdYearEnd: "",
+        schoolName: "",
+        MatricDegree: "",
+        StartYear1: "",
+        StartYear2: "",
+        jobPost1: "",
+        fisrtCompany: "",
+        Description1: "",
+        StartYear3: "",
+        StartYear4: "",
+        jobPost2: "",
+        secondCompany: "",
+        Description2: "",
+        StartYear5: "",
+        StartYear6: "",
+        jobPost3: "",
+        thirdCompany: "",
+        Description3: "",
+        StartYear7: "",
+        StartYear8: "",
+        jobPost4: "",
+        forthCompany: "",
+        Description4: "",
+        StartYear9: "",
+        StartYear0: "",
+        jobPost5: "",
+        fifthCompany: "",
+        Description5: "",
+        FirstLanguage: "",
+        FirstLanguagePercent: "",
+        SecondLanguage: "",
+        SecondLanguagePercent: "",
+        ThirdLanguage: "",
+        ThirdLanguagePercent: "",
+        ForthLanguage: "",
+        ForthLanguagePercent: "",
+        FirstSkill: "",
+        FirstSkillPercent: "",
+        SecondSkill: "",
+        SecondSkillPercent: "",
+        ThirdSkill: "",
+        ThirdSkillPercent: "",
+        ForthSkill: "",
+        ForthSkillPercent: "",
+        FifthSkill: "",
+        FifthSkillPercent: "",
+        SixthSkill: "",
+        SixthSkillPercent: "",
+        SeventhSkill: "",
+        SeventhSkillPercent: "",
+        EightSkill: "",
+        EightSkillPercent: "",
+        first_hobby: "",
+        second_hobby: "",
+        third_hobby: "",
+        forth_hobby: "",
+        first_certification: "",
+        second_certification: "",
+        third_certification: "",
+        forth_certification: ""
+    };
+    var users = localStorage.getItem("users");
+    if (users) {
+        users = JSON.parse(users);
+    }
+    else {
+        users = [];
+    }
+    for (var i = 0; i < users.length; i++) {
+        saveUsers = users[i];
+    }
+    console.log(saveUsers);
+    firstName.value = saveUsers.firstName;
+    lastName.value = saveUsers.lastName;
+    profileImage.src = saveUsers.profileImage;
+    email.value = saveUsers.email;
+    post.value = saveUsers.post;
+    phone.value = String(saveUsers.phone);
+    address.value = saveUsers.address;
+    profileUrl.value = saveUsers.profileUrl;
+    linkedinUrl.value = saveUsers.linkedinUrl;
+    objectives.value = saveUsers.objectives;
+    firstYearStart.value = saveUsers.firstYearStart;
+    firstYearEnd.value = saveUsers.firstYearEnd;
+    UniversityName.value = saveUsers.UniversityName;
+    bechlorDegree.value = saveUsers.UniversityName;
+    secondYearStart.value = saveUsers.secondYearStart;
+    secondYearEnd.value = saveUsers.secondYearEnd;
+    collegeName.value = saveUsers.collegeName;
+    InterDegree.value = saveUsers.InterDegree;
+    thirdYearStart.value = saveUsers.thirdYearStart;
+    thirdYearEnd.value = saveUsers.thirdYearEnd;
+    schoolName.value = saveUsers.schoolName;
+    MatricDegree.value = saveUsers.MatricDegree;
+    StartYear1.value = saveUsers.StartYear1;
+    StartYear2.value = saveUsers.StartYear2;
+    jobPost1.value = saveUsers.jobPost1;
+    fisrtCompany.value = saveUsers.fisrtCompany;
+    Description1.value = saveUsers.Description1;
+    StartYear3.value = saveUsers.StartYear3;
+    StartYear4.value = saveUsers.StartYear4;
+    jobPost2.value = saveUsers.jobPost2;
+    secondCompany.value = saveUsers.secondCompany;
+    Description2.value = saveUsers.Description2;
+    StartYear5.value = saveUsers.StartYear5;
+    StartYear6.value = saveUsers.StartYear6;
+    jobPost3.value = saveUsers.jobPost3;
+    thirdCompany.value = saveUsers.thirdCompany;
+    Description3.value = saveUsers.Description3;
+    StartYear7.value = saveUsers.StartYear7;
+    StartYear8.value = saveUsers.StartYear8;
+    jobPost4.value = saveUsers.jobPost4;
+    forthCompany.value = saveUsers.forthCompany;
+    Description4.value = saveUsers.Description4;
+    StartYear9.value = saveUsers.StartYear9;
+    StartYear0.value = saveUsers.StartYear0;
+    jobPost5.value = saveUsers.jobPost5;
+    fifthCompany.value = saveUsers.fifthCompany;
+    Description5.value = saveUsers.Description5;
+    FirstLanguage.value = saveUsers.FirstLanguage;
+    FirstLanguagePercent.value = saveUsers.FirstLanguagePercent;
+    SecondLanguage.value = saveUsers.SecondLanguage;
+    SecondLanguagePercent.value = saveUsers.SecondLanguagePercent;
+    ThirdLanguage.value = saveUsers.ThirdLanguage;
+    ThirdLanguagePercent.value = saveUsers.ThirdLanguagePercent;
+    ForthLanguage.value = saveUsers.ForthLanguage;
+    ForthLanguagePercent.value = saveUsers.ForthLanguagePercent;
+    FirstSkill.value = saveUsers.FirstSkill;
+    FirstSkillPercent.value = saveUsers.FirstSkillPercent;
+    SecondSkill.value = saveUsers.SecondSkill;
+    SecondSkillPercent.value = saveUsers.SecondSkillPercent;
+    ThirdSkill.value = saveUsers.ThirdSkill;
+    ThirdSkillPercent.value = saveUsers.ThirdSkillPercent;
+    ForthSkill.value = saveUsers.ForthSkill;
+    ForthSkillPercent.value = saveUsers.ForthSkillPercent;
+    FifthSkill.value = saveUsers.FifthSkill;
+    FifthSkillPercent.value = saveUsers.FifthSkillPercent;
+    SixthSkill.value = saveUsers.SixthSkill;
+    SixthSkillPercent.value = saveUsers.SixthSkillPercent;
+    SeventhSkill.value = saveUsers.SeventhSkill;
+    SeventhSkillPercent.value = saveUsers.SeventhSkillPercent;
+    EightSkill.value = saveUsers.EightSkill;
+    EightSkillPercent.value = saveUsers.EightSkillPercent;
+    first_hobby.value = saveUsers.first_hobby;
+    second_hobby.value = saveUsers.second_hobby;
+    third_hobby.value = saveUsers.third_hobby;
+    forth_hobby.value = saveUsers.forth_hobby;
+    first_certification.value = saveUsers.first_certification;
+    second_certification.value = saveUsers.second_certification;
+    third_certification.value = saveUsers.third_certification;
+    forth_certification.value = saveUsers.forth_certification;
+}
+getData();
 form.addEventListener("submit", function (e) {
     e.preventDefault();
 });
@@ -355,7 +529,7 @@ nextStep4.addEventListener("click", function () {
             third_certification: third_certification.value,
             forth_certification: forth_certification.value,
         };
-        users.push(user);
+        users[0] = user;
         localStorage.setItem("users", JSON.stringify(users));
         firstName.value = "";
         lastName.value = "";
@@ -443,7 +617,7 @@ nextStep4.addEventListener("click", function () {
 preview.addEventListener("click", function () {
     setTimeout(function () {
         if (true) {
-            window.location.href = "./resume/resume.html";
+            window.location.href = "../resume/resume.html";
         }
     }, 500);
 });
