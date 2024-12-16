@@ -529,7 +529,7 @@ nextStep4.addEventListener("click", function () {
             third_certification: third_certification.value,
             forth_certification: forth_certification.value,
         };
-        users[0] = user;
+        users = [user];
         localStorage.setItem("users", JSON.stringify(users));
         firstName.value = "";
         lastName.value = "";

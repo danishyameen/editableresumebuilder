@@ -721,7 +721,7 @@ nextStep4.addEventListener("click", () => {
 
         }
 
-        users[0] = user
+        users = [user]
 
         localStorage.setItem("users", JSON.stringify(users))
 
